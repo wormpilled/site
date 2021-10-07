@@ -24,20 +24,20 @@
     <script type="text/javascript" src="src/jquery.min.js"></script>
     <script type="text/javascript" src="src/jquery-infscroll.js"></script>
     <script type="text/javascript" src="src/manual-trigger.js"></script>
-    <script type="text/javascript" src="src/jquery-timeago.js"></script>
 </head>
 <body>
 
 
-    <script type="text/javascript">
-      $("time.timeago").timeago();
-    </script>
-
+<script>
+jQuery(document).ready(function() {
+	jQuery("time.timeago").timeago();
+});
+</script>
 
 banner<br>
-navigation<br>
-
-<a href="/" id="theme-toggle" onclick="modeSwitcher()" style="cursor: pointer;"></a><br> 
+navigation<br> 
+ 
+      <a href="/" id="theme-toggle" onclick="modeSwitcher()" style="cursor: pointer;"></a><br> 
       
  
 
@@ -52,8 +52,6 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
 
 <div class="box"> 
 <a href=copy-of-a-copy><h1>Yeah, the NIN song</h1></a>
-Created at <time class="timeago" datetime="2021-10-07T03:05:52.418Z"></time><br> 
-Updated at <time class="timeago" datetime="2021-10-07T03:05:55.001Z"></time><br> 
 <p></p>
 <a id="read-more" href="copy-of-a-copy">Read More</a>
 </div>
@@ -65,8 +63,6 @@ Updated at <time class="timeago" datetime="2021-10-07T03:05:55.001Z"></time><br>
 
 <div class="box"> 
 <a href=new-page-need4><h1>Untitled Page</h1></a>
-Created at <time class="timeago" datetime="2021-10-07T03:05:21.286Z"></time><br> 
-Updated at <time class="timeago" datetime="2021-10-07T03:05:24.121Z"></time><br> 
 <p></p>
 <a id="read-more" href="new-page-need4">Read More</a>
 </div>
@@ -78,8 +74,6 @@ Updated at <time class="timeago" datetime="2021-10-07T03:05:24.121Z"></time><br>
 
 <div class="box"> 
 <a href=new-page><h1>New page that has never been edited after creation</h1></a>
-Created at <time class="timeago" datetime="2021-10-06T16:32:56.587Z"></time><br> 
-Updated at <time class="timeago" datetime="2021-10-07T02:27:03.816Z"></time><br> 
 <p> <h1 class="toc-header" id="header-goes-here"> <a target="_blank" href="#header-goes-here" class="toc-anchor">¶ </a> Header goes here </h1> <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p></p>
 <a id="read-more" href="new-page">Read More</a>
 </div>
