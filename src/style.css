@@ -240,11 +240,15 @@ margin-right:13px;}
     font-size:13px;
 }
 
+.optn button,
 .optn input {
 	border:none;
 	box-shadow:none;
 	border-radius:0px;
 	background:#333333;
+}
+.optn button {
+	margin-left:5px;
 }
 
 .optn a {text-decoration:none;}
