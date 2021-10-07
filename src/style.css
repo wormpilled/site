@@ -247,6 +247,7 @@ margin-right:13px;}
 	background:#333333;
 }
 
+.optn a {text-decoration:none;}
 .optn form {
 	margin-top:5px;
 	display:flex;
