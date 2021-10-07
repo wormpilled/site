@@ -106,13 +106,13 @@ FOOTER BOTTOM TEXT
          		path: function(index) {
          			return "index" + index + ".html";
          		}, 
-         		jQuery(document).ready(function() {
+         		function(newElements){
 					jQuery("time.timeago").timeago();
-				});
+				}
 			});
          });
       </script> 
       <script src="src/mode-switcher.js"></script>
 
    </body>
-</html>
+</html> 
