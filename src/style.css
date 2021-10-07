@@ -164,13 +164,16 @@ background:red;
 width:120px;
 }
 
- 
-#content {
+.holder {
 	display: block;
 	width: 480px;
 	margin: 36px auto;
 	margin-top:0px;
 	margin-bottom:0px; 
+}
+
+#content {
+
 }
 
 #content h1 { 
