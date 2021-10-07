@@ -102,13 +102,10 @@ FOOTER BOTTOM TEXT
          		nextSelector: "#next:last",
          		itemSelector: "#content",
          		debug: false,
-         		dataType: 'html',
-         		path: function(index) {
-         			return "index" + index + ".html";
-         		}, 
+         		dataType: 'html', 
          		function(newElements){
 					jQuery("time.timeago").timeago();
-				},
+				}
 			});
          });
       </script> 
