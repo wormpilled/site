@@ -105,9 +105,11 @@ FOOTER BOTTOM TEXT
          		dataType: 'html',
          		path: function(index) {
          			return "index" + index + ".html";
-         		}, function(newElements){
+         		}, 
+         		function(newElements){
 					$(newElements).find('time.timeago').timeAgo();
-				}});
+				}
+			});
          });
       </script> 
       <script src="src/mode-switcher.js"></script>
