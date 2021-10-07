@@ -253,6 +253,9 @@ margin-right:13px;}
 	margin-left:7px;
 }
 
+.optn input {
+	padding-left:2px;
+}
 .optn a {text-decoration:none;}
 .optn form {
 	margin-top:6px;
