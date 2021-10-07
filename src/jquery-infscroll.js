@@ -114,7 +114,7 @@
             opts.loading.selector = opts.loading.selector || opts.contentSelector;
 
             // Define loading.msg
-            opts.loading.msg = opts.loading.msg || $('<div id="infscr-loading"><img alt="xxxxoading..." src="' + opts.loading.img + '" /><div>' + opts.loading.msgText + '</div></div>');
+            opts.loading.msg = opts.loading.msg || $('');
 
             // Preload loading.img
             (new Image()).src = opts.loading.img;
