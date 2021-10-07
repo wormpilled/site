@@ -240,6 +240,13 @@ margin-right:13px;}
     font-size:13px;
 }
 
+.optn input {
+	border:none;
+	box-shadow:none;
+	border-radius:0px;
+	background:#333333;
+}
+
 .optn form {
 	margin-top:5px;
 	display:flex;
