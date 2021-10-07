@@ -183,7 +183,11 @@ a, a:active, a:visited {
 a:hover {
     color: var(--link-color);
 }
-#read-more {text-decoration:none;}
+#read-more {
+	text-decoration:none;
+	text-align: right;
+	display: block;
+}
 .box {
 	border:1px solid var(--box-border);
 	border-bottom:2px solid var(--box-border);
