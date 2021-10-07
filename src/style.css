@@ -92,6 +92,10 @@ body, select, input, textarea {
 	text-align: left;
 }
 
+#content img { 
+	display: block;
+	margin: auto;
+}
 #content p {
 	margin:0;
 	margin-bottom:8px;
