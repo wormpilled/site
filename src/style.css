@@ -234,7 +234,7 @@ margin-right:13px;}
 
 
 .optn {
-    background: #000;
+    background: #4e4e4e;
     padding: 7px;
     padding-top:5px;
     margin-bottom:20px;
@@ -247,10 +247,11 @@ margin-right:13px;}
 .optn input {
 	border:none;
 	box-shadow:none;
-	border-radius:0px;
+	border-radius:3px;
 	background:#333333;
 	font-size:13px;
 	color:white;
+	height: 22px;
 }
 .optn button {
 	margin-left:7px;
