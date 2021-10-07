@@ -83,7 +83,7 @@ body, select, input, textarea {
 }
 
 #content h1 {
-	font-size: 2.2em;
+	font-size: 22px;
 	padding: 0 0 .1em;
 	margin: 0 0 1em;
 	display: block; 
@@ -96,7 +96,7 @@ body, select, input, textarea {
 }
 
 #next {
-	font-size: 2.2em;
+	font-size: 22px;
 	display: block;
 	width: 200px;
 	margin: 0 auto 72px;
