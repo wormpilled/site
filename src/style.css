@@ -160,8 +160,10 @@ article {
 div.box h1 a.toc-anchor { display:none;} 
 
 .sidebar {
-background:red;
-width:120px;
+	background: red;
+	width: 120px;
+	float: left;
+	margin-left: -130px;
 }
 
 .holder {
