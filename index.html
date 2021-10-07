@@ -29,11 +29,9 @@
 <body>
 
 
-<script>
-jQuery(document).ready(function() {
-	jQuery("time.timeago").timeago();
-});
-</script>
+    <script type="text/javascript">
+      $("time.timeago").timeago();
+    </script>
 
 
 banner<br>
@@ -102,14 +100,14 @@ FOOTER BOTTOM TEXT
          		nextSelector: "#next:last",
          		itemSelector: "#content",
          		debug: false,
-         		dataType: 'html', 
-         		function(newElements){
-					$(newElements).jQuery('time.timeago').timeAgo();
-				}
-			});
+         		dataType: 'html',
+				maxPage: 6,
+         		path: function(index) {
+         			return "index" + index + ".html";
+         		}});
          });
       </script> 
       <script src="src/mode-switcher.js"></script>
 
    </body>
-</html> 
+</html>
