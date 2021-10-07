@@ -106,9 +106,9 @@ FOOTER BOTTOM TEXT
          		path: function(index) {
          			return "index" + index + ".html";
          		}, 
-         		function(newElements){
-					$(newElements).find('time.timeago').timeAgo();
-				}
+         		jQuery(document).ready(function() {
+					jQuery("time.timeago").timeago();
+				});
 			});
          });
       </script> 
