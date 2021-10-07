@@ -246,6 +246,8 @@ margin-right:13px;}
 	box-shadow:none;
 	border-radius:0px;
 	background:#333333;
+	font-size:13px;
+	color:white;
 }
 .optn button {
 	margin-left:7px;
@@ -257,8 +259,4 @@ margin-right:13px;}
 	display:flex;
 	color:white;
 	font-size:13px;
-}
-.optn button {
-	color:white;
-	font-size:13px;
-}
+} 
