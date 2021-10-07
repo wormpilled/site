@@ -16,8 +16,8 @@
 
 
 <script>
-		  jQuery(document).ready(function() {
-  jQuery("time.timeago").timeago();
+jQuery(document).ready(function() {
+	jQuery("time.timeago").timeago();
 });
 </script>
 
@@ -38,6 +38,32 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
 
 
 <div class="box"> 
+<a href=copy-of-a-copy><h1>Yeah, the NIN song</h1></a>
+Created <time class="timeago" datetime="2021-10-07T03:05:52.418Z"></time><br> 
+Updated <time class="timeago" datetime="2021-10-07T03:05:55.001Z"></time><br> 
+<p></p>
+<a id="read-more" href="copy-of-a-copy">Read More</a>
+</div>
+
+
+
+
+
+
+<div class="box"> 
+<a href=new-page-need4><h1>Untitled Page</h1></a>
+Created <time class="timeago" datetime="2021-10-07T03:05:21.286Z"></time><br> 
+Updated <time class="timeago" datetime="2021-10-07T03:05:24.121Z"></time><br> 
+<p></p>
+<a id="read-more" href="new-page-need4">Read More</a>
+</div>
+
+
+
+
+
+
+<div class="box"> 
 <a href=new-page><h1>New page that has never been edited after creation</h1></a>
 Created <time class="timeago" datetime="2021-10-06T16:32:56.587Z"></time><br> 
 Updated <time class="timeago" datetime="2021-10-07T02:27:03.816Z"></time><br> 
@@ -48,16 +74,27 @@ Updated <time class="timeago" datetime="2021-10-07T02:27:03.816Z"></time><br>
 
 
 
-
-
-<div class="box"> 
-<a href=toxoplasmosis-is-evil><h1>Toxoplasmosis is evil and killing you</h1></a>
-Created <time class="timeago" datetime="2021-10-02T19:45:47.672Z"></time><br> 
-Updated <time class="timeago" datetime="2021-10-07T02:26:06.570Z"></time><br> 
-<p> <h1 class="toc-header" id="toxoplasmosis-is-evil-and-killing-you-edited"> <a target="_blank" href="#toxoplasmosis-is-evil-and-killing-you-edited" class="toc-anchor">¶ </a> Toxoplasmosis is evil and killing you edited </h1> <p>There is nothing more terrifying than realizing you are not evil. </p> <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p> <p> <a target="_blank" class="is-external-link" href="https://google.com"> <img alt="slav doge" src="img/1633075218142s.jpg"> </a> </p></p>
-<a id="read-more" href="toxoplasmosis-is-evil">Read More</a>
+<a id="next" href="index1.html">next page?</a>
 </div>
 
+FOOTER BOTTOM TEXT
 
 
+      <script type="text/javascript">
+         $(document).ready(function(){
+         	$('#content').infinitescroll({
+         		navSelector: "#next:last",
+         		nextSelector: "#next:last",
+         		itemSelector: "#content",
+         		debug: false,
+         		dataType: 'html',
+             maxPage: 6,
+         		path: function(index) {
+         			return "index" + index + ".html";
+         		}});
+         });
+      </script> 
+      <script src="src/mode-switcher.js"></script>
 
+   </body>
+</html>
