@@ -210,4 +210,21 @@ blockquote {background:orange;}
 
 strong {font-weight:bold;}
 
-.banner {display:flex;}
+.banner-first {background:black; height:40px;}
+.banner-first img {max-width:30px; margin-top:5px;}
+.banner-first .banner-text {font-weight:bold; line-height:38px; margin-left:5px;}
+.banner-first .banner-text div {font-weight:normal; line-height:40px; font-size:12px;}
+.banner-first .holder { display:flex;}
+.banner-secondary {background:#111; padding-top:5px; padding-bottom:6px;}
+.banner-secondary a {margin-right:10px; text-decoration:none; letter-spacing:-0.2px;}
+.banner-text {display:flex;}
+
+.banner-first {display:flex;}
+
+.theme-button a { text-decoration:none; }
+.theme-button {  
+position:absolute;
+height:40px;
+line-height:39px;
+right:0px; 
+margin-right:13px;}
