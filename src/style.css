@@ -159,6 +159,11 @@ article {
 
 div.box h1 a.toc-anchor { display:none;} 
 
+.sidebar {
+background:red;
+width:120px;
+}
+
  
 #content {
 	display: block;
