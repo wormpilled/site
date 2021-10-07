@@ -156,7 +156,8 @@ article {
     max-width: 650px;
     margin: 2em auto;
 }
- 
+
+div.box h1 a.toc-anchor { display:none;}
 
  
 #content {
