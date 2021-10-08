@@ -114,7 +114,7 @@ html[data-theme="dark"] {
 }
 
  
-html[data-intro="light"] .alert { 
+html[data-intro="off"] .alert { 
 
 display:none!important;
 }

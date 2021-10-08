@@ -1,53 +1,53 @@
-let systemInitiatedintro = window.matchMedia("(prefers-color-scheme: dark)"); 
+let systemInitiatedintro = window.matchMedia("(prefers-color-scheme: show)"); 
 let introtog = sessionStorage.getItem('intro');
 
-if (systemInitiatedDark.matches) {
+if (systemInitiatedshow.matches) {
 	document.getElementById("intro-toggle").innerHTML = "Hide Intro";
 } else {
 	document.getElementById("intro-toggle").innerHTML = "Show Intro";
 }
 
-function prefersColorTest(systemInitiatedDark) {
-  if (systemInitiatedDark.matches) {
-  	document.documentElement.setAttribute('data-intro', 'dark');		
+function prefersColorTest(systemInitiatedshow) {
+  if (systemInitiatedshow.matches) {
+  	document.documentElement.setAttribute('data-intro', 'show');		
    	document.getElementById("intro-toggle").innerHTML = "Hide Intro";
    	sessionStorage.setItem('intro', '');
   } else {
-  	document.documentElement.setAttribute('data-intro', 'light');
+  	document.documentElement.setAttribute('data-intro', 'hide');
     document.getElementById("intro-toggle").innerHTML = "Show Intro";
     sessionStorage.setItem('intro', '');
   }
 }
-systemInitiatedDark.addListener(prefersColorTest);
+systemInitiatedshow.addListener(prefersColorTest);
 
 
 function introSwitcher() {
 	let introtog = sessionStorage.getItem('intro');
-	if (introtog === "dark") {
-		document.documentElement.setAttribute('data-intro', 'light');
-		sessionStorage.setItem('intro', 'light');
+	if (introtog === "show") {
+		document.documentElement.setAttribute('data-intro', 'hide');
+		sessionStorage.setItem('intro', 'hide');
 		document.getElementById("intro-toggle").innerHTML = "Show Intro";
-	}	else if (introtog === "light") {
-		document.documentElement.setAttribute('data-intro', 'dark');
-		sessionStorage.setItem('intro', 'dark');
+	}	else if (introtog === "hide") {
+		document.documentElement.setAttribute('data-intro', 'show');
+		sessionStorage.setItem('intro', 'show');
 		document.getElementById("intro-toggle").innerHTML = "Hide Intro";
-	} else if (systemInitiatedDark.matches) {	
-		document.documentElement.setAttribute('data-intro', 'light');
-		sessionStorage.setItem('intro', 'light');
+	} else if (systemInitiatedshow.matches) {	
+		document.documentElement.setAttribute('data-intro', 'hide');
+		sessionStorage.setItem('intro', 'hide');
 		document.getElementById("intro-toggle").innerHTML = "Show Intro";
 	} else {
-		document.documentElement.setAttribute('data-intro', 'dark');
-		sessionStorage.setItem('intro', 'dark');
+		document.documentElement.setAttribute('data-intro', 'show');
+		sessionStorage.setItem('intro', 'show');
 		document.getElementById("intro-toggle").innerHTML = "Hide Intro";
 	}
 }
 
-if (introtog === "dark") {
-	document.documentElement.setAttribute('data-intro', 'dark');
-	sessionStorage.setItem('intro', 'dark');
+if (introtog === "show") {
+	document.documentElement.setAttribute('data-intro', 'show');
+	sessionStorage.setItem('intro', 'show');
 	document.getElementById("intro-toggle").innerHTML = "Hide Intro";
-} else if (introtog === "light") {
-	document.documentElement.setAttribute('data-intro', 'light');
-	sessionStorage.setItem('intro', 'light');
+} else if (introtog === "hide") {
+	document.documentElement.setAttribute('data-intro', 'hide');
+	sessionStorage.setItem('intro', 'hide');
 	document.getElementById("intro-toggle").innerHTML = "Show Intro";
 }
