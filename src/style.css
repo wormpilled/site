@@ -114,9 +114,8 @@ html[data-theme="dark"] {
 }
 
  
-html[data-intro="off"] .alert { 
-
-display:none!important;
+html[data-intro="hide"] .alert { 
+	display:none!important;
 }
 
 
