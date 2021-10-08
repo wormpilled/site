@@ -1,13 +1,14 @@
- let introtog = sessionStorage.getItem('intro');
+let systemInitiatedHide = window.matchMedia("(prefers-color-scheme: dark)"); 
+let introtog = sessionStorage.getItem('intro');
 
-if (systemInitiatedDark.matches) {
+if (systemInitiatedHide.matches) {
 	document.getElementById("intro-toggle").innerHTML = "Show Intro";
 } else {
 	document.getElementById("intro-toggle").innerHTML = "Hide Intro";
 }
 
-function prefersColorTest(systemInitiatedDark) {
-  if (systemInitiatedDark.matches) {
+function prefersHideTest(systemInitiatedHide) {
+  if (systemInitiatedHide.matches) {
   	document.documentElement.setAttribute('data-intro', 'show');		
    	document.getElementById("intro-toggle").innerHTML = "Show Intro";
    	sessionStorage.setItem('intro', '');
@@ -17,7 +18,7 @@ function prefersColorTest(systemInitiatedDark) {
     sessionStorage.setItem('intro', '');
   }
 }
-systemInitiatedDark.addListener(prefersColorTest);
+systemInitiatedHide.addListener(prefersHideTest);
 
 
 function introSwitcher() {
@@ -30,7 +31,7 @@ function introSwitcher() {
 		document.documentElement.setAttribute('data-intro', 'show');
 		sessionStorage.setItem('intro', 'show');
 		document.getElementById("intro-toggle").innerHTML = "Show Intro";
-	} else if (systemInitiatedDark.matches) {	
+	} else if (systemInitiatedHide.matches) {	
 		document.documentElement.setAttribute('data-intro', 'hide');
 		sessionStorage.setItem('intro', 'hide');
 		document.getElementById("intro-toggle").innerHTML = "Hide Intro";
