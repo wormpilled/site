@@ -4,7 +4,7 @@ let introtog = sessionStorage.getItem('intro');
 if (systemInitiatedDark.matches) {
 	document.getElementById("intro-toggle").innerHTML = "Hide Intro";
 } else {
-	document.getElementById("intro-toggle").innerHTML = "Dark Mode";
+	document.getElementById("intro-toggle").innerHTML = "Show Intro";
 }
 
 function prefersColorTest(systemInitiatedDark) {
@@ -14,7 +14,7 @@ function prefersColorTest(systemInitiatedDark) {
    	sessionStorage.setItem('intro', '');
   } else {
   	document.documentElement.setAttribute('data-intro', 'light');
-    document.getElementById("intro-toggle").innerHTML = "Dark Mode";
+    document.getElementById("intro-toggle").innerHTML = "Show Intro";
     sessionStorage.setItem('intro', '');
   }
 }
@@ -26,7 +26,7 @@ function introSwitcher() {
 	if (introtog === "dark") {
 		document.documentElement.setAttribute('data-intro', 'light');
 		sessionStorage.setItem('intro', 'light');
-		document.getElementById("intro-toggle").innerHTML = "Dark Mode";
+		document.getElementById("intro-toggle").innerHTML = "Show Intro";
 	}	else if (introtog === "light") {
 		document.documentElement.setAttribute('data-intro', 'dark');
 		sessionStorage.setItem('intro', 'dark');
@@ -34,7 +34,7 @@ function introSwitcher() {
 	} else if (systemInitiatedDark.matches) {	
 		document.documentElement.setAttribute('data-intro', 'light');
 		sessionStorage.setItem('intro', 'light');
-		document.getElementById("intro-toggle").innerHTML = "Dark Mode";
+		document.getElementById("intro-toggle").innerHTML = "Show Intro";
 	} else {
 		document.documentElement.setAttribute('data-intro', 'dark');
 		sessionStorage.setItem('intro', 'dark');
@@ -49,5 +49,5 @@ if (introtog === "dark") {
 } else if (introtog === "light") {
 	document.documentElement.setAttribute('data-intro', 'light');
 	sessionStorage.setItem('intro', 'light');
-	document.getElementById("intro-toggle").innerHTML = "Dark Mode";
+	document.getElementById("intro-toggle").innerHTML = "Show Intro";
 }
