@@ -1,53 +1,53 @@
 let systemInitiatedHide = window.matchMedia("(prefers-color-scheme: dark)"); 
-let introtog = sessionStorage.getItem('intro');
+let introdisplay = sessionStorage.getItem('introdisplay');
 
 if (systemInitiatedHide.matches) {
-	document.getElementById("intro-toggle").innerHTML = "Show Intro";
+	document.getElementById("introdisplay-toggle").innerHTML = "Light Mode";
 } else {
-	document.getElementById("intro-toggle").innerHTML = "Hide Intro";
+	document.getElementById("introdisplay-toggle").innerHTML = "Dark Mode";
 }
 
-function prefersHideTest(systemInitiatedHide) {
+function prefersColorTest(systemInitiatedHide) {
   if (systemInitiatedHide.matches) {
-  	document.documentElement.setAttribute('data-intro', 'show');		
-   	document.getElementById("intro-toggle").innerHTML = "Show Intro";
-   	sessionStorage.setItem('intro', '');
+  	document.documentElement.setAttribute('data-introdisplay', 'dark');		
+   	document.getElementById("introdisplay-toggle").innerHTML = "Light Mode";
+   	sessionStorage.setItem('introdisplay', '');
   } else {
-  	document.documentElement.setAttribute('data-intro', 'hide');
-    document.getElementById("intro-toggle").innerHTML = "Hide Intro";
-    sessionStorage.setItem('intro', '');
+  	document.documentElement.setAttribute('data-introdisplay', 'light');
+    document.getElementById("introdisplay-toggle").innerHTML = "Dark Mode";
+    sessionStorage.setItem('introdisplay', '');
   }
 }
-systemInitiatedHide.addListener(prefersHideTest);
+systemInitiatedHide.addListener(prefersColorTest);
 
 
 function introSwitcher() {
-	let introtog = sessionStorage.getItem('intro');
-	if (introtog === "hide") {
-		document.documentElement.setAttribute('data-intro', 'hide');
-		sessionStorage.setItem('intro', 'hide');
-		document.getElementById("intro-toggle").innerHTML = "Hide Intro";
-	}	else if (introtog === "show") {
-		document.documentElement.setAttribute('data-intro', 'show');
-		sessionStorage.setItem('intro', 'show');
-		document.getElementById("intro-toggle").innerHTML = "Show Intro";
+	let introdisplay = sessionStorage.getItem('introdisplay');
+	if (introdisplay === "dark") {
+		document.documentElement.setAttribute('data-introdisplay', 'light');
+		sessionStorage.setItem('introdisplay', 'light');
+		document.getElementById("introdisplay-toggle").innerHTML = "Dark Mode";
+	}	else if (introdisplay === "light") {
+		document.documentElement.setAttribute('data-introdisplay', 'dark');
+		sessionStorage.setItem('introdisplay', 'dark');
+		document.getElementById("introdisplay-toggle").innerHTML = "Light Mode";
 	} else if (systemInitiatedHide.matches) {	
-		document.documentElement.setAttribute('data-intro', 'hide');
-		sessionStorage.setItem('intro', 'hide');
-		document.getElementById("intro-toggle").innerHTML = "Hide Intro";
+		document.documentElement.setAttribute('data-introdisplay', 'light');
+		sessionStorage.setItem('introdisplay', 'light');
+		document.getElementById("introdisplay-toggle").innerHTML = "Dark Mode";
 	} else {
-		document.documentElement.setAttribute('data-intro', 'show');
-		sessionStorage.setItem('intro', 'show');
-		document.getElementById("intro-toggle").innerHTML = "Show Intro";
+		document.documentElement.setAttribute('data-introdisplay', 'dark');
+		sessionStorage.setItem('introdisplay', 'dark');
+		document.getElementById("introdisplay-toggle").innerHTML = "Light Mode";
 	}
 }
 
-if (introtog === "show") {
-	document.documentElement.setAttribute('data-intro', 'show');
-	sessionStorage.setItem('intro', 'show');
-	document.getElementById("intro-toggle").innerHTML = "Show Intro";
-} else if (introtog === "hide") {
-	document.documentElement.setAttribute('data-intro', 'hide');
-	sessionStorage.setItem('intro', 'hide');
-	document.getElementById("intro-toggle").innerHTML = "Hide Intro";
+if (introdisplay === "dark") {
+	document.documentElement.setAttribute('data-introdisplay', 'dark');
+	sessionStorage.setItem('introdisplay', 'dark');
+	document.getElementById("introdisplay-toggle").innerHTML = "Light Mode";
+} else if (introdisplay === "light") {
+	document.documentElement.setAttribute('data-introdisplay', 'light');
+	sessionStorage.setItem('introdisplay', 'light');
+	document.getElementById("introdisplay-toggle").innerHTML = "Dark Mode";
 }
