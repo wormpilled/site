@@ -7,7 +7,7 @@ if (systemInitiatedIntro.matches) {
 }
 
 function prefersColorTest(systemInitiatedIntro) {
-  if (systemInitiatedDark.matches) {
+  if (systemInitiatedIntro.matches) {
   	document.documentElement.setAttribute('data-intro', 'show');		
    	document.getElementById("intro-toggle").innerHTML = "Hide Intro";
    	sessionStorage.setItem('intro', '');
