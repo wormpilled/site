@@ -10,11 +10,11 @@ if (systemInitiatedDark.matches) {
 function prefersColorTest(systemInitiatedDark) {
   if (systemInitiatedDark.matches) {
   	document.documentElement.setAttribute('data-intro', 'show');		
-   	document.getElementById("intro-toggle").innerHTML = "Hide Intro";
+   	document.getElementById("intro-toggle").innerHTML = "Show Intro";
    	sessionStorage.setItem('intro', '');
   } else {
   	document.documentElement.setAttribute('data-intro', 'hide');
-    document.getElementById("intro-toggle").innerHTML = "Show Intro";
+    document.getElementById("intro-toggle").innerHTML = "Hide Intro";
     sessionStorage.setItem('intro', '');
   }
 }
@@ -26,28 +26,28 @@ function introSwitcher() {
 	if (introtog === "show") {
 		document.documentElement.setAttribute('data-intro', 'hide');
 		sessionStorage.setItem('intro', 'hide');
-		document.getElementById("intro-toggle").innerHTML = "Show Intro";
+		document.getElementById("intro-toggle").innerHTML = "Hide Intro";
 	}	else if (introtog === "light") {
 		document.documentElement.setAttribute('data-intro', 'show');
 		sessionStorage.setItem('intro', 'show');
-		document.getElementById("intro-toggle").innerHTML = "Hide Intro";
+		document.getElementById("intro-toggle").innerHTML = "Show Intro";
 	} else if (systemInitiatedDark.matches) {	
 		document.documentElement.setAttribute('data-intro', 'hide');
 		sessionStorage.setItem('intro', 'hide');
-		document.getElementById("intro-toggle").innerHTML = "Show Intro";
+		document.getElementById("intro-toggle").innerHTML = "Hide Intro";
 	} else {
 		document.documentElement.setAttribute('data-intro', 'show');
 		sessionStorage.setItem('intro', 'show');
-		document.getElementById("intro-toggle").innerHTML = "Hide Intro";
+		document.getElementById("intro-toggle").innerHTML = "Show Intro";
 	}
 }
 
 if (introtog === "show") {
 	document.documentElement.setAttribute('data-intro', 'show');
 	sessionStorage.setItem('intro', 'show');
-	document.getElementById("intro-toggle").innerHTML = "Hide Intro";
+	document.getElementById("intro-toggle").innerHTML = "Show Intro";
 } else if (introtog === "hide") {
 	document.documentElement.setAttribute('data-intro', 'hide');
 	sessionStorage.setItem('intro', 'hide');
-	document.getElementById("intro-toggle").innerHTML = "Show Intro";
+	document.getElementById("intro-toggle").innerHTML = "Hide Intro";
 }
