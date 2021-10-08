@@ -114,7 +114,7 @@ html[data-theme="dark"] {
 }
 
  
-html[data-intro="light"] body div.holder .optn { 
+html[data-intro="light"] .alert { 
 
 display:none!important;
 }
