@@ -1,5 +1,4 @@
-let systemInitiatedintro = window.matchMedia("(prefers-color-scheme: hide)"); 
-let introtog = sessionStorage.getItem('intro');
+ let introtog = sessionStorage.getItem('intro');
 
 if (systemInitiatedDark.matches) {
 	document.getElementById("intro-toggle").innerHTML = "Show Intro";
