@@ -21,7 +21,7 @@ function prefersColorTest(systemInitiatedDark) {
 systemInitiatedDark.addListener(prefersColorTest);
 
 
-function modeSwitcher() {
+function introSwitcher() {
 	let introdisp = sessionStorage.getItem('introdisp');
 	if (introdisp === "dark") {
 		document.documentElement.setAttribute('data-intro', 'light');
