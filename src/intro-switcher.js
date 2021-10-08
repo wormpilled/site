@@ -1,12 +1,12 @@
 let introtog = sessionStorage.getItem('intro');
 
-if (systemInitiatedDark.matches) {
+if (systemInitiatedIntro.matches) {
 	document.getElementById("intro-toggle").innerHTML = "Hide Intro";
 } else {
 	document.getElementById("intro-toggle").innerHTML = "Show Intro";
 }
 
-function prefersColorTest(systemInitiatedDark) {
+function prefersColorTest(systemInitiatedIntro) {
   if (systemInitiatedDark.matches) {
   	document.documentElement.setAttribute('data-intro', 'show');		
    	document.getElementById("intro-toggle").innerHTML = "Hide Intro";
@@ -17,7 +17,7 @@ function prefersColorTest(systemInitiatedDark) {
     sessionStorage.setItem('intro', '');
   }
 }
-systemInitiatedDark.addListener(prefersColorTest);
+systemInitiatedIntro.addListener(prefersColorTest);
 
 
 function introSwitcher() {
