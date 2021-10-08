@@ -56,11 +56,13 @@ jQuery(document).ready(function() {
 				wormpilled<div>.com</div>
 			</div>
 			<div class="tags">
-				<select onChange="window.location.href=this.value">
-    <option value="www.google.com">A</option>
-    <option value="www.aol.com">B</option>
-</select>
-
+				<form> 
+					<select name="select" onchange="window.open(this.options[this.selectedIndex].value,'_blank')"> 
+						<option value="http://www.msn.com/ ">MSN</option>
+						<option value="http://www.amazon.com/ ">Amazon</option>
+						<option value="http://www.google.com/ ">Google</option>
+					</select>
+				</form>
 			</div> 
 	</div>
 
