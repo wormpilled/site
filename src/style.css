@@ -113,13 +113,7 @@ html[data-theme="dark"] {
     --box-border:rgb(0, 112, 201);
 }
 
-
-html[data-intro="hide"] .toggle_alert {
-	opacity:0.3;
-}
-html[data-intro="show"] .toggle_alert {
-	opacity:1;
-}
+ 
 
 html[data-intro="hide"] .alert { 
 	display:none!important;
