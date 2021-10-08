@@ -1,4 +1,4 @@
-let systemInitiatedintro = window.matchMedia("(prefers-color-scheme: dark)"); 
+let systemInitiatedintro = window.matchMedia("(prefers-color-scheme: hide)"); 
 let introtog = sessionStorage.getItem('intro');
 
 if (systemInitiatedDark.matches) {
