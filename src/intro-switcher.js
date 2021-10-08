@@ -30,7 +30,7 @@ function introSwitcher() {
 		document.documentElement.setAttribute('data-intro', 'show');
 		sessionStorage.setItem('intro', 'show');
 		document.getElementById("intro-toggle").innerHTML = "Hide Intro";
-	} else if (systemInitiatedDark.matches) {	
+	} else if (systemInitiatedIntro.matches) {	
 		document.documentElement.setAttribute('data-intro', 'hide');
 		sessionStorage.setItem('intro', 'hide');
 		document.getElementById("intro-toggle").innerHTML = "Show Intro";
