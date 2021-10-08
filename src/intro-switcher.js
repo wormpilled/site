@@ -2,9 +2,9 @@ let systemInitiatedintro = window.matchMedia("(prefers-color-scheme: hide)");
 let introtog = sessionStorage.getItem('intro');
 
 if (systemInitiatedDark.matches) {
-	document.getElementById("intro-toggle").innerHTML = "Hide Intro";
-} else {
 	document.getElementById("intro-toggle").innerHTML = "Show Intro";
+} else {
+	document.getElementById("intro-toggle").innerHTML = "Hide Intro";
 }
 
 function prefersColorTest(systemInitiatedDark) {
