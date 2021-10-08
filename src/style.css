@@ -112,7 +112,12 @@ html[data-theme="dark"] {
     --main-text-color: hsl(0, 0%, 85%);
     --box-border:rgb(0, 112, 201);
 }
+
  
+html[data-intro="light"] body div.holder .optn { 
+
+display:none!important;
+}
 
 
 @media (prefers-color-scheme: dark) {
