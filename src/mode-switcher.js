@@ -1,4 +1,4 @@
-let systemInitiatedLight = window.matchMedia("(prefers-color-scheme: dark)"); 
+let systemInitiatedLight = window.matchMedia("(prefers-color-scheme: light)"); 
 let theme = sessionStorage.getItem('theme');
 
 if (systemInitiatedLight.matches) {
