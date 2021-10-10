@@ -1,0 +1,103 @@
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="robots" content="index, follow">
+	<meta name="description" content="Place the meta description text here.">
+		  
+	<title>Infinite Scroll Testing</title>
+	<!-- Twitter Card data -->
+	<meta name="twitter:card" value="summary">
+
+	<!-- Open Graph data -->
+	<meta property="og:title" content="Title Here" />
+	<meta property="og:type" content="article" />
+	<meta property="og:url" content="http://www.example.com/" />
+	<meta property="og:image" content="http://example.com/image.jpg" />
+	<meta property="og:description" content="Description Here" /> 
+    <meta name="author" content="Jake Rocheleau">
+    
+    <link rel="shortcut icon" href="../src/worm.png">
+    <link rel="icon" href="../src/worm.png">
+    <link type="text/css" rel="stylesheet" media="all" href="../src/style.css"> 
+    <script type="text/javascript" src="../src/jquery.min.js"></script>
+    <script type="text/javascript" src="../src/jquery-infscroll.js"></script>
+    <script type="text/javascript" src="../src/manual-trigger.js"></script>
+    <script type="text/javascript" src="../src/jquery-timeago.js"></script>
+    <script type="text/javascript" src="../src/jquery-sticky.js"></script> 
+
+</head>
+<body>
+
+
+<script>
+jQuery(document).ready(function() {
+	$("time.timeago").timeago();
+});
+</script>
+
+<script>
+    jQuery(document).ready(function ($) {
+        $(".sidebar").stick_in_parent();
+    });
+</script>
+
+<div class="theme-button">
+		<a href="/" id="theme-toggle" onclick="modeSwitcher()" style="cursor: pointer;"></a> 
+</div>
+
+<div class="banner-first">
+	<div class="holder">	  
+			<div class="logo">
+				<img src="../src/worm.svg">
+			</div>		
+			<div class="banner-text">
+				wormpilled<div>.com</div>
+			</div>
+			<div class="tags">
+				<form> 
+					<select name="select" onchange="window.open(this.options[this.selectedIndex].value,'_parent')"> 
+						<option value="#">Browse Tags</option>
+						<option value="http://www.msn.com/ ">MSN</option>
+						<option value="http://www.amazon.com/ ">Amazon</option>
+						<option value="http://www.google.com/ ">Google</option>
+					</select>
+				</form>
+			</div> 
+	</div>
+
+</div>
+
+<div class="banner-secondary">
+	<div class="holder">	 
+		<div class="navigation">
+			<a href="#">Home</a> <a href="#">Start Here</a> <a href="#">About</a> <a href="#">Contact</a>
+		</div> 
+	</div>	
+</div>
+ 
+  
+
+
+		<div class="holder">
+			<div class="sidebar">
+				<img src="../img/sidebar.jpg">
+			</div>
+			<div id="content">
+		
+
+	<div class="box"> 
+	<h1>Untitled Page</h1>
+	<p><h1 class="toc-header" id="do-you-have-worms-bro"><a target="_blank" href="#do-you-have-worms-bro" class="toc-anchor">¶</a> do you have worms bro?</h1><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p></p> 
+	</div>
+	
+</div>
+</div>
+
+FOOTER BOTTOM TEXT
+
+      <script src="../src/mode-switcher.js"></script>
+
+   </body>
+</html>
