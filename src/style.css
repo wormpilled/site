@@ -294,5 +294,5 @@ div.toggle_alert a#introdisplay-toggle {
 html[data-intro="hide"] div.toggle_alert a { 
 	background-image:none!important;
 	color:var(--link-color)!important;
-	font-weight:normal;
+	font-weight:normal!important;
 }
