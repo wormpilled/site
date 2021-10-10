@@ -281,3 +281,12 @@ margin-right:13px;}
 	margin-bottom:25px;
 	margin-top:5px;
 }
+
+.toggle_alert a {
+
+	background-image: url(src/close.svg);
+	padding-left: 25px;
+	padding-right: 25px;
+	background-repeat: no-repeat;
+
+}
