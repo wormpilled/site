@@ -282,7 +282,7 @@ margin-right:13px;}
 	margin-top:5px;
 }
 
-.toggle_alert a {
+ div.toggle_alert a#introdisplay-toggle {
 
 	background-image: url(src/close.svg);
 	padding-left: 25px;
