@@ -303,6 +303,12 @@ html[data-intro="hide"] div.toggle_alert a {
 	font-weight:normal!important;
 }
 
+html[data-intro="hide"] div.toggle_alert {
+	margin-bottom:10px;
+	margin-top:10px;
+}
+
+
 .footer {
 flex-shrink: 0;
 }
