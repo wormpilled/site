@@ -120,6 +120,7 @@ html[data-intro="hide"] .alert {
 }
 html[data-intro="hide"] div.toggle_alert a { 
 	background-image:none!important;
+	color:var(--link-color);
 }
 
 @media (prefers-color-scheme: dark) {
