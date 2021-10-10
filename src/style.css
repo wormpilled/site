@@ -304,8 +304,8 @@ html[data-intro="hide"] div.toggle_alert a {
 }
 
 html[data-intro="hide"] div.toggle_alert {
-	margin-bottom:10px;
-	margin-top:10px;
+	margin-bottom:20px;
+	margin-top:0px;
 }
 
 
