@@ -222,7 +222,7 @@ blockquote {background:orange;}
 strong {font-weight:bold;}
 
 .banner-first {background:black; height:40px;}
-.banner-first img {max-width:30px; margin-top:5px;}
+.banner-first img {width:30px; margin-top:5px;}
 .banner-first .banner-text {font-weight:bold; line-height:38px; margin-left:5px;}
 .banner-first .banner-text div {font-weight:normal; line-height:40px; font-size:12px;}
 .banner-first .holder { display:flex;}
