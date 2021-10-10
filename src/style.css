@@ -137,11 +137,16 @@ html[data-intro="hide"] .alert {
         --box-border:rgb(0, 112, 201);
     }
 }
+html, body {
+  height: 100%;
+}
 body {
     background-color: var(--main-background-color);
     color: var(--main-text-color); 
     margin:0px;
     padding:0px;
+	display: flex;
+	flex-direction: column;
 }
 a, a:active, a:visited {
     color: var(--link-color);
@@ -188,6 +193,7 @@ div.box h1 a.toc-anchor { display:none;}
 
 #content {
 
+  flex: 1 0 auto;
 }
 
 #content h1 { 
@@ -295,4 +301,8 @@ html[data-intro="hide"] div.toggle_alert a {
 	background-image:none!important;
 	color:var(--link-color)!important;
 	font-weight:normal!important;
+}
+
+.footer {
+flex-shrink: 0;
 }
