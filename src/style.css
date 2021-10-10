@@ -192,7 +192,9 @@ div.box h1 a.toc-anchor { display:none;}
 	flex: 1 0 480px;
 }
 
- 
+html body div.banner-first div.holder {
+width:480px;
+}
 
 #content h1 { 
 	font-size:19px;
