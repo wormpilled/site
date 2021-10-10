@@ -2,7 +2,7 @@ let systemInitiatedHide = window.matchMedia("(prefers-color-scheme: hide)");
 let introdisplay = sessionStorage.getItem('introdisplay');
 
 if (systemInitiatedHide.matches) {
-	document.getElementById("introdisplay-toggle").innerHTML = "Show Introduction";
+	document.getElementById("introdisplay-toggle").innerHTML = "<img src='src/close.svg'> Show Introduction";
 } else {
 	document.getElementById("introdisplay-toggle").innerHTML = "Hide Introduction";
 }
@@ -10,7 +10,7 @@ if (systemInitiatedHide.matches) {
 function prefersColorTest(systemInitiatedHide) {
   if (systemInitiatedHide.matches) {
   	document.documentElement.setAttribute('data-intro', 'hide');		
-   	document.getElementById("introdisplay-toggle").innerHTML = "Show Introduction";
+   	document.getElementById("introdisplay-toggle").innerHTML = "<img src='src/close.svg'> Show Introduction";
    	sessionStorage.setItem('introdisplay', '');
   } else {
   	document.documentElement.setAttribute('data-intro', 'show');
@@ -30,7 +30,7 @@ function introSwitcher() {
 	}	else if (introdisplay === "show") {
 		document.documentElement.setAttribute('data-intro', 'hide');
 		sessionStorage.setItem('introdisplay', 'hide');
-		document.getElementById("introdisplay-toggle").innerHTML = "Show Introduction";
+		document.getElementById("introdisplay-toggle").innerHTML = "<img src='src/close.svg'> Show Introduction";
 	} else if (systemInitiatedHide.matches) {	
 		document.documentElement.setAttribute('data-intro', 'show');
 		sessionStorage.setItem('introdisplay', 'show');
@@ -38,14 +38,14 @@ function introSwitcher() {
 	} else {
 		document.documentElement.setAttribute('data-intro', 'hide');
 		sessionStorage.setItem('introdisplay', 'hide');
-		document.getElementById("introdisplay-toggle").innerHTML = "Show Introduction";
+		document.getElementById("introdisplay-toggle").innerHTML = "<img src='src/close.svg'> Show Introduction";
 	}
 }
 
 if (introdisplay === "hide") {
 	document.documentElement.setAttribute('data-intro', 'hide');
 	sessionStorage.setItem('introdisplay', 'hide');
-	document.getElementById("introdisplay-toggle").innerHTML = "Show Introduction";
+	document.getElementById("introdisplay-toggle").innerHTML = "<img src='src/close.svg'> Show Introduction";
 } else if (introdisplay === "show") {
 	document.documentElement.setAttribute('data-intro', 'show');
 	sessionStorage.setItem('introdisplay', 'show');
