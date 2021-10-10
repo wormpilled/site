@@ -217,7 +217,7 @@ max-width:480px;
 
 #next { 
 	display: block;
-	width: 200px;
+	text-align:center;
 	margin: 0 auto 72px;
 }
 
