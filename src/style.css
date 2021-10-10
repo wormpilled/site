@@ -189,12 +189,10 @@ div.box h1 a.toc-anchor { display:none;}
 	margin: 36px auto;
 	margin-top:0px;
 	margin-bottom:0px; 
+	flex: 1 0 auto;
 }
 
-#content {
-
-  flex: 1 0 auto;
-}
+ 
 
 #content h1 { 
 	font-size:19px;
