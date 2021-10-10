@@ -118,7 +118,9 @@ html[data-theme="dark"] {
 html[data-intro="hide"] .alert { 
 	display:none!important;
 }
-
+html[data-intro="hide"] div.toggle_alert a { 
+	background-image:none!important;
+}
 
 @media (prefers-color-scheme: dark) {
     html,
@@ -282,11 +284,12 @@ margin-right:13px;}
 	margin-top:5px;
 }
 
- div.toggle_alert a#introdisplay-toggle {
-
-	background-image: url(src/close.svg);
+div.toggle_alert a#introdisplay-toggle {
+	background-image: url(../src/close.svg);
 	padding-left: 25px;
 	padding-right: 25px;
 	background-repeat: no-repeat;
-
+    color:#dd2e44;
+    font-weight:bold;
 }
+
