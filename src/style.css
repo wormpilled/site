@@ -118,10 +118,7 @@ html[data-theme="dark"] {
 html[data-intro="hide"] .alert { 
 	display:none!important;
 }
-html[data-intro="hide"] div.toggle_alert a { 
-	background-image:none!important;
-	color:var(--link-color);
-}
+
 
 @media (prefers-color-scheme: dark) {
     html,
@@ -294,3 +291,8 @@ div.toggle_alert a#introdisplay-toggle {
     font-weight:bold;
 }
 
+html[data-intro="hide"] div.toggle_alert a { 
+	background-image:none!important;
+	color:var(--link-color);
+	font-weight:normal;
+}
