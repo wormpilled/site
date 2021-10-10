@@ -184,12 +184,11 @@ div.box h1 a.toc-anchor { display:none;}
 	max-width:120px;
 	}
 .holder {
-	display: block;
-	width: 480px;
+	display: block; 
 	margin: 36px auto;
 	margin-top:0px;
 	margin-bottom:0px; 
-	flex: 1 0 auto;
+	flex: 1 0 480px;
 }
 
  
