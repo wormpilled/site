@@ -312,3 +312,7 @@ html[data-intro="hide"] div.toggle_alert {
 .footer {
 flex-shrink: 0;
 }
+
+#post #content img {
+	min-height:auto;
+}
