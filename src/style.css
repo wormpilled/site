@@ -1,4 +1,4 @@
- 
+  
 
 html, body, div, span, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -23,9 +23,7 @@ input, select { vertical-align: middle; }
 
 body { font:13px/1.231 sans-serif; *font-size:small; } /* Hack retained to preserve specificity */
 select, input, textarea, button { font:99% sans-serif; }
- 
-
- html { overflow-y: scroll; }
+  
 
 /* j.mp/webkit-tap-highlight-color */
 a:link { -webkit-tap-highlight-color: #FF5E99; }
@@ -94,6 +92,27 @@ body, select, input, textarea {
  
 
 
+
+
+
+html,
+html[data-theme="light"] {
+    --link-color: rgb(0, 112, 201);
+    --link-color-hover: rgb(0, 112, 201);
+    --main-background-color: hsl(0, 0%, 90%);
+    --main-text-color: hsl(0, 0%, 20%);
+    --box-border:rgb(0, 112, 201);
+}
+html[data-theme="dark"] {
+    --link-color: rgb(100, 210, 255);
+    --link-color-hover: rgb(100, 210, 255);
+    --main-background-color: hsl(0, 0%, 20%);
+    --main-text-color: hsl(0, 0%, 85%);
+    --box-border:rgb(0, 112, 201);
+}
+
+ 
+
 html[data-intro="hide"] .alert { 
 	display:none!important;
 }
@@ -102,7 +121,14 @@ html[data-intro="hide"] .alert {
 html, body {
   height: 100%;
 }
-
+body {
+    background-color: var(--main-background-color);
+    color: var(--main-text-color); 
+    margin:0px;
+    padding:0px;
+	display: flex;
+	flex-direction: column;
+}
 a, a:active, a:visited {
     color: var(--link-color);
 }
@@ -132,7 +158,7 @@ div.box h1 a.toc-anchor { display:none;}
 	width: 120px;
 	float: left;
 	margin-left: -140px;
-	margin-top:-3px;
+	margin-top:20px;
 }
 
 .sidebar img {
@@ -267,4 +293,23 @@ html[data-intro="hide"] div.toggle_alert {
 .footer {
 flex-shrink: 0;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
