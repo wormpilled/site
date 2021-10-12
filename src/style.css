@@ -121,12 +121,18 @@ div.box h1 a.toc-anchor { display:none;}
 }
 
 html body div.banner-first div.holder {
-max-width:480px;
+	max-width:480px;
 }
 
-#embed {height:120px;}
-#embed img {margin:auto;
-display:block;}
+#embed {
+	height:120px;
+	margin-bottom: 18px;
+	margin-top: 15px;
+}
+#embed img {
+	margin:auto;
+	display:block;
+}
 
 #content h1 { 
 	font-size:19px;
@@ -139,8 +145,10 @@ display:block;}
 }
  #content img {
 	max-height: 120px;
-    }
-    #content hr {display:none;}
+}
+#content hr {
+	display:none;
+}
     
 #content p {
 	margin:0;
