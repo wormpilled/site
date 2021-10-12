@@ -133,11 +133,10 @@ max-width:480px;
 	width: 480px;
 	text-align: left;
 }
-
-#content img { 
-	display: block;
-	margin: auto;
-}
+ #content img {
+	max-height:250px;
+    }
+    #content hr {display:none;}
 #content p {
 	margin:0;
 	margin-bottom:8px;
