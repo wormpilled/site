@@ -84,11 +84,6 @@ input:invalid, textarea:invalid {
  
 
 
-
-
- 
- 
-
 html[data-intro="hide"] .alert { 
 	display:none!important;
 }
@@ -129,7 +124,9 @@ div.box h1 a.toc-anchor { display:none;}
 html body div.banner-first div.holder {
 max-width:480px;
 }
-
+#content {
+	margin-top:-1px;
+}
 #content h1 { 
 	font-size:19px;
 	margin:0;
