@@ -1,1 +1,315 @@
+  
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+ 
+
+input, select { vertical-align: middle; }
+ 
+
+body { font:13px/1.231 sans-serif; *font-size:small; } /* Hack retained to preserve specificity */
+select, input, textarea, button { font:99% sans-serif; }
+  
+
+/* j.mp/webkit-tap-highlight-color */
+a:link { -webkit-tap-highlight-color: #FF5E99; }
+a:hover, a:active { outline: none; }
+
+ 
+/* Set sub, sup without affecting line-height: gist.github.com/413930 */
+sub, sup { font-size: 75%; line-height: 0; position: relative; }
+sup { top: -0.5em; }
+sub { bottom: -0.25em; }
+ 
+.ie6 legend, .ie7 legend { margin-left: -7px; } 
+   
+/* 1) Make inputs and buttons play nice in IE: www.viget.com/inspire/styling-the-button-element-in-internet-explorer/
+   2) WebKit browsers add a 2px margin outside the chrome of form elements. 
+      Firefox adds a 1px margin above and below textareas */
+button, input, select, textarea { width: auto; overflow: visible; margin: 0; }
+
+textarea { overflow: auto; } /* www.sitepoint.com/blogs/2010/08/20/ie-remove-textarea-scrollbars/ */
+
+/* Remove extra padding and inner border in Firefox */
+input::-moz-focus-inner,
+button::-moz-focus-inner { border: 0; padding: 0; }
+
+/* Colors for form validity */
+input:valid, textarea:valid   {  }
+input:invalid, textarea:invalid {
+   border-radius: 1px; -moz-box-shadow: 0px 0px 5px red; -webkit-box-shadow: 0px 0px 5px red; box-shadow: 0px 0px 5px red;
+} 
+
+/* Bicubic resizing for non-native sized IMG:
+   code.flickr.com/blog/2008/11/12/on-ui-quality-the-little-things-client-side-image-resizing/ */
+.ie7 img { -ms-interpolation-mode: bicubic; }
+
+
+/**
+ * You might tweak these..
+ */
+
+body, select, input, textarea {
+   color: #444;
+   font-family:Ubuntu;
+	font-size: 16px;
+}
+ 
+ 
+
+ 
+.ir { display: block; text-indent: -999em; overflow: hidden; background-repeat: no-repeat; text-align: left; direction: ltr; }
+ 
+.hidden { display: none; visibility: hidden; }
+ 
+.visuallyhidden { border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px; }
+ 
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus { clip: auto; height: auto; margin: 0; overflow: visible; position: static; width: auto; }
+
+ 
+.invisible { visibility: hidden; }
+
+ 
+.clearfix:before, .clearfix:after { content: "\0020"; display: block; height: 0; overflow: hidden; }
+.clearfix:after { clear: both; }
+ 
+.clearfix { zoom: 1; }
+ 
+
+
+
+
+
+html,
+html[data-theme="light"] {
+    --link-color: rgb(0, 112, 201);
+    --link-color-hover: rgb(0, 112, 201);
+    --main-background-color: hsl(0, 0%, 90%);
+    --main-text-color: hsl(0, 0%, 20%);
+    --box-border:rgb(0, 112, 201);
+}
+html[data-theme="dark"] {
+    --link-color: rgb(100, 210, 255);
+    --link-color-hover: rgb(100, 210, 255);
+    --main-background-color: hsl(0, 0%, 20%);
+    --main-text-color: hsl(0, 0%, 85%);
+    --box-border:rgb(0, 112, 201);
+}
+
+ 
+
+html[data-intro="hide"] .alert { 
+	display:none!important;
+}
+
+ 
+html, body {
+  height: 100%;
+}
+body {
+    background-color: var(--main-background-color);
+    color: var(--main-text-color); 
+    margin:0px;
+    padding:0px;
+	display: flex;
+	flex-direction: column;
+}
+a, a:active, a:visited {
+    color: var(--link-color);
+}
+a:hover {
+    color: var(--link-color);
+}
+#read-more {
+	text-decoration:none;
+	text-align: right;
+	display: block;
+}
+.box {
+	border:1px solid var(--box-border);
+	border-bottom:2px solid var(--box-border);
+	border-right:2px solid var(--box-border);
+	margin-bottom:20px;
+	padding:9px;
+}
+article {
+    max-width: 650px;
+    margin: 2em auto;
+}
+
+div.box h1 a.toc-anchor { display:none;} 
+
+.sidebar { 
+	width: 120px;
+	float: left;
+	margin-left: -140px;
+	margin-top:20px;
+}
+
+.sidebar img {
+	max-width:120px;
+	}
+.holder {
+	display: block;
+	width: 480px;
+	margin: 36px auto;
+	margin-top:0px;
+	margin-bottom:0px; 
+	flex: 1 0 480px;
+}
+
+html body div.banner-first div.holder {
+max-width:480px;
+}
+
+#content h1 { 
+	font-size:19px;
+	margin:0;
+	padding:0;
+	margin-bottom:8px;
+	display: block; 
+	width: 480px;
+	text-align: left;
+}
+
+#content img { 
+	display: block;
+	margin: auto;
+}
+#content p {
+	margin:0;
+	margin-bottom:8px;
+}
+
+#next { 
+	display: block;
+	text-align:center;
+	margin: 0 auto 72px;
+}
+
+
+blockquote {background:orange;}
+
+
+strong {font-weight:bold;}
+
+.banner-first {background:black; height:40px;}
+.banner-first img {width:30px; margin-top:5px;}
+.banner-first .banner-text {font-weight:bold; line-height:38px; margin-left:5px;}
+.banner-first .banner-text div {font-weight:normal; line-height:40px; font-size:12px;}
+.banner-first .holder { display:flex;}
+.banner-secondary {background:#111; padding-top:5px; padding-bottom:6px;}
+.banner-secondary a {margin-right:10px; text-decoration:none; letter-spacing:-0.2px;}
+.banner-text {display:flex;}
+
+.banner-first {display:flex;}
+
+.theme-button a { text-decoration:none; }
+.theme-button {  
+position:absolute;
+height:40px;
+line-height:39px;
+right:0px; 
+margin-right:13px;}
+
+
+.optn {
+    background: #4e4e4e;
+    padding: 7px;
+    padding-top:5px;
+    margin-bottom:20px;
+    font-size:13px;
+    border-radius: 0 0 7px 7px;
+    
+}
+
+.optn button,
+.optn input {
+	border:none;
+	box-shadow:none;
+	border-radius:3px;
+	background:#333333;
+	font-size:13px;
+	color:white;
+	height: 22px;
+}
+.optn button {
+	margin-left:7px;
+}
+
+.optn input {
+	padding-left:4px;
+}
+.optn a {text-decoration:none;}
+.optn form {
+	margin-top:6px;
+	display:flex;
+	color:white;
+	font-size:13px;
+} 
+
+.toggle_alert {
+	text-align:center;
+	margin-bottom:20px;
+	margin-top:10px;
+}
+
+div.toggle_alert a#introdisplay-toggle {
+	background-image: url(../src/close.svg);
+	padding-left: 25px;
+	padding-right: 25px;
+	background-repeat: no-repeat;
+    color:#dd2e44;
+    font-weight:bold;
+}
+
+html[data-intro="hide"] div.toggle_alert a { 
+	background-image:none!important;
+	color:var(--link-color)!important;
+	font-weight:normal!important;
+}
+
+html[data-intro="hide"] div.toggle_alert {
+	margin-bottom:20px;
+	margin-top:0px;
+}
+
+
+.footer {
+flex-shrink: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
