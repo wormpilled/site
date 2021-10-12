@@ -123,6 +123,7 @@ div.box h1 a.toc-anchor { display:none;}
 html body div.banner-first div.holder {
 max-width:480px;
 }
+#embed {height:120px;}
 
 #content h1 { 
 	font-size:19px;
