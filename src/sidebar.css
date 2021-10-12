@@ -1,5 +1,14 @@
 
+.sidebar img {
+	max-width:120px;
+	}
 
+.sidebar { 
+	width: 120px;
+	float: left;
+	margin-left: -140px;
+	margin-top:20px;
+}
 .username {
 	font-weight:bold;
     font-size:15px;

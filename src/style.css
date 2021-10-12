@@ -115,16 +115,8 @@ article {
 
 div.box h1 a.toc-anchor { display:none;} 
 
-.sidebar { 
-	width: 120px;
-	float: left;
-	margin-left: -140px;
-	margin-top:20px;
-}
+.navigation { margin-left:10px; }
 
-.sidebar img {
-	max-width:120px;
-	}
 .holder {
 	display: block;
 	width: 480px;
