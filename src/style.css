@@ -73,6 +73,15 @@ body, select, input, textarea {
  
  
 
+body {
+    background-color: var(--main-background-color);
+    color: var(--main-text-color); 
+    margin:0px;
+    padding:0px;
+	display: flex;
+	flex-direction: column;
+}
+
  
 .ir { display: block; text-indent: -999em; overflow: hidden; background-repeat: no-repeat; text-align: left; direction: ltr; }
  
@@ -103,17 +112,16 @@ html, body {
   height: 100%;
 }
 
-#read-more {
-	text-decoration:none;
-	text-align: right;
-	display: block;
-}
-
 a, a:active, a:visited {
     color: var(--link-color);
 }
 a:hover {
     color: var(--link-color);
+}
+#read-more {
+	text-decoration:none;
+	text-align: right;
+	display: block;
 }
 .box {
 	border:1px solid var(--box-border);
@@ -269,7 +277,10 @@ html[data-intro="hide"] div.toggle_alert {
 flex-shrink: 0;
 }
 
- 
+
+
+
+
 
 #post #content img {
   max-height: 100%;
