@@ -12,7 +12,7 @@ body {
 
   font-family: "Inter", sans-serif;
   line-height: 1.7;
-  background-color: var(--bg-grey-light);
+  background-color: var(--bg-grey-light)!important;
 }
 .dark {
   --text-white: #e6e6e6;
@@ -24,14 +24,14 @@ body {
 } 
 p {
   font-size: 16px;
-  color: var(--text-dark);
+  color: var(--text-dark)!important;
 }
 h1 {
   font-size: 40px;
   letter-spacing: 1px;
   font-weight: 900;
   margin-bottom: 40px;
-  color: var(--text-dark);
+  color: var(--text-dark)!important;
 }
 .buttons {
   width: 100%;
@@ -47,8 +47,8 @@ h1 {
   border-radius: 10px;
   font-family: inherit;
   cursor: pointer;
-  background-color: var(--bg-indigo);
-  color: var(--text-white);
+  background-color: var(--bg-indigo)!important;
+  color: var(--text-white)!important;
   font-size: 16px;
   font-weight: 400;
   text-transform: capitalize;
