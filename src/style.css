@@ -102,14 +102,7 @@ html[data-intro="hide"] .alert {
 html, body {
   height: 100%;
 }
-body {
-    background-color: var(--main-background-color);
-    color: var(--main-text-color); 
-    margin:0px;
-    padding:0px;
-	display: flex;
-	flex-direction: column;
-}
+
 a, a:active, a:visited {
     color: var(--link-color);
 }
