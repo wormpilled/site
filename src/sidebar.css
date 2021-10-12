@@ -9,12 +9,6 @@
 	margin-left: -140px;
 	margin-top:20px;
 }
-.username {
-	font-weight:bold;
-    font-size:15px;
-    margin-bottom:5px;
-    color:var(--main-text-color);
-}
 .sidebar_meta {
     margin-right: -150px;
     margin-top:-3px;
@@ -35,14 +29,7 @@
     font-size: 12px;
     font-style: italic; 
 }
-.sidebar_meta img {
-	width:50px;
-    height:50px;
-    margin:0px!important;
-    border: 1px solid var(--box-border);
-	padding: 1px;
-    background:#7d7d7d;
-}
+
 .sidebar_meta div {
 	margin-top:10px;
 }
@@ -51,8 +38,3 @@
     font-style:italic;
     margin-bottom:10px;
 }
-.sidebar_meta time {
-	font-size:14px; 
-    font-style:normal;
-    color:var(--main-text-color);
-   }
