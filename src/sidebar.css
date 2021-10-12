@@ -30,7 +30,7 @@
     font-style: italic; 
 }
 
-.sidebar_meta div {
+.sidebar_meta .header {
 	margin-top:10px;
 }
 .sidebar_meta .time {
