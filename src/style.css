@@ -73,15 +73,6 @@ body, select, input, textarea {
  
  
 
-body {
-    background-color: var(--main-background-color);
-    color: var(--main-text-color); 
-    margin:0px;
-    padding:0px;
-	display: flex;
-	flex-direction: column;
-}
-
  
 .ir { display: block; text-indent: -999em; overflow: hidden; background-repeat: no-repeat; text-align: left; direction: ltr; }
  
@@ -103,6 +94,27 @@ body {
  
 
 
+
+
+
+html,
+html[data-theme="light"] {
+    --link-color: rgb(0, 112, 201);
+    --link-color-hover: rgb(0, 112, 201);
+    --main-background-color: hsl(0, 0%, 90%);
+    --main-text-color: hsl(0, 0%, 20%);
+    --box-border:rgb(0, 112, 201);
+}
+html[data-theme="dark"] {
+    --link-color: rgb(100, 210, 255);
+    --link-color-hover: rgb(100, 210, 255);
+    --main-background-color: hsl(0, 0%, 20%);
+    --main-text-color: hsl(0, 0%, 85%);
+    --box-border:rgb(0, 112, 201);
+}
+
+ 
+
 html[data-intro="hide"] .alert { 
 	display:none!important;
 }
@@ -111,7 +123,14 @@ html[data-intro="hide"] .alert {
 html, body {
   height: 100%;
 }
-
+body {
+    background-color: var(--main-background-color);
+    color: var(--main-text-color); 
+    margin:0px;
+    padding:0px;
+	display: flex;
+	flex-direction: column;
+}
 a, a:active, a:visited {
     color: var(--link-color);
 }
@@ -276,44 +295,4 @@ html[data-intro="hide"] div.toggle_alert {
 .footer {
 flex-shrink: 0;
 }
-
-
-
-
-
-
-#post #content img {
-  max-height: 100%;
-  
-}
-#post #content hr {
-	display:none;
-}
-#embed {
-	min-height:125px;
-    background:#dbdbdb;
-    margin-left: -9px;
-	margin-right: -9px;
-    margin-top:20px;
-    margin-bottom:20px;
-}
-
-#post h1:first-of-type {
-	font-size:25px;
-    font-weight:bold;
-    margin-bottom:20px;
-    margin-top:5px;
-}
-
-#post #content .box {
-	border-top:0px;
-    border-right-width:1px;
-    border-bottom-width:1px;
-}
-
-#post #content ul {
-	margin-left:15px;
-}
-
-
 
