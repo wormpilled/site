@@ -94,49 +94,11 @@ body, select, input, textarea {
  
 
 
-
-
-
-html,
-html[data-theme="light"] {
-    --link-color: rgb(0, 112, 201);
-    --link-color-hover: rgb(0, 112, 201);
-    --main-background-color: hsl(0, 0%, 90%);
-    --main-text-color: hsl(0, 0%, 20%);
-    --box-border:rgb(0, 112, 201);
-}
-html[data-theme="dark"] {
-    --link-color: rgb(100, 210, 255);
-    --link-color-hover: rgb(100, 210, 255);
-    --main-background-color: hsl(0, 0%, 20%);
-    --main-text-color: hsl(0, 0%, 85%);
-    --box-border:rgb(0, 112, 201);
-}
-
- 
-
 html[data-intro="hide"] .alert { 
 	display:none!important;
 }
 
-
-@media (prefers-color-scheme: dark) {
-    html,
-    html[data-theme="dark"] {
-        --link-color: rgb(100, 210, 255);
-        --link-color-hover: rgb(100, 210, 255);
-        --main-background-color: hsl(0, 0%, 20%);
-        --main-text-color: hsl(0, 0%, 85%);
-        --box-border:rgb(0, 112, 201);
-    }
-    html[data-theme="light"] {
-        --link-color: rgb(0, 112, 201);
-        --link-color-hover: rgb(0, 112, 201);
-        --main-background-color: hsl(0, 0%, 90%);
-        --main-text-color: hsl(0, 0%, 20%);
-        --box-border:rgb(0, 112, 201);
-    }
-}
+ 
 html, body {
   height: 100%;
 }
