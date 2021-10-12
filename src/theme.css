@@ -1,5 +1,17 @@
+ body, select, input, textarea {
+   color: var(--main-text-color); 
+   font-family:Ubuntu;
+	font-size: 16px;
+	background-color: var(--main-background-color);
+	
+} 
+body { 
+    color: var(--main-text-color); 
+    margin:0px;
+    padding:0px;
+	display: flex;
+	flex-direction: column;
  
-body {
   /* cores de texto */
   --text-white: #ffffff;
   --text-dark: #142136;
@@ -54,14 +66,6 @@ h1 {
 }
 
 
-body {
-    background-color: var(--main-background-color);
-    color: var(--main-text-color); 
-    margin:0px;
-    padding:0px;
-	display: flex;
-	flex-direction: column;
-}
 
 
 a, a:active, a:visited {
@@ -77,14 +81,6 @@ a:hover {
 	margin-bottom:20px;
 	padding:9px;
 }
-
-body, select, input, textarea {
-   color: var(--main-text-color); 
-   font-family:Ubuntu;
-	font-size: 16px;
-	background-color: var(--main-background-color);
-	
-} 
 
 /* j.mp/webkit-tap-highlight-color */
 a:link { -webkit-tap-highlight-color: #FF5E99; }
