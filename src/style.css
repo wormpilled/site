@@ -109,7 +109,19 @@ html, body {
 	display: block;
 }
 
-
+a, a:active, a:visited {
+    color: var(--link-color);
+}
+a:hover {
+    color: var(--link-color);
+}
+.box {
+	border:1px solid var(--box-border);
+	border-bottom:2px solid var(--box-border);
+	border-right:2px solid var(--box-border);
+	margin-bottom:20px;
+	padding:9px;
+}
 article {
     max-width: 650px;
     margin: 2em auto;
