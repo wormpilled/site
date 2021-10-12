@@ -137,6 +137,11 @@ html[data-intro="hide"] div.toggle_alert a {
 	font-weight:normal!important;
 }
 
+html[data-intro="hide"] div.toggle_alert {
+	margin-bottom:20px;
+	margin-top:0px;
+}
+
 blockquote {background:orange;}
 
 .banner-first {background:black; height:40px;}

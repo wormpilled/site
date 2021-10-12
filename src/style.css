@@ -212,19 +212,12 @@ margin-right:13px;}
 }
 
 
-html[data-intro="hide"] div.toggle_alert {
-	margin-bottom:20px;
-	margin-top:0px;
-}
 
 
 .footer {
 flex-shrink: 0;
 }
-
-.test1{background-color:pink;}
-
-
+ 
 
 
 
