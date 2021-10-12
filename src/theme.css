@@ -78,3 +78,75 @@ a:hover {
 	margin-bottom:20px;
 	padding:9px;
 }
+
+body, select, input, textarea {
+   color: var(--main-text-color); 
+   font-family:Ubuntu;
+	font-size: 16px;
+	background-color: var(--main-background-color);
+	
+} 
+
+/* j.mp/webkit-tap-highlight-color */
+a:link { -webkit-tap-highlight-color: #FF5E99; }
+
+
+a, a:active, a:visited {
+    color: var(--link-color);
+}
+a:hover {
+    color: var(--link-color);
+}
+
+
+
+.optn button,
+.optn input {
+	border:none;
+	box-shadow:none;
+	border-radius:3px;
+	background:#333333;
+	font-size:13px;
+	color:white;
+	height: 22px;
+}
+
+
+.optn form {
+	margin-top:6px;
+	display:flex;
+	color:white;
+	font-size:13px;
+} 
+
+.test1{color:pink;}
+
+
+div.toggle_alert a#introdisplay-toggle {
+	background-image: url(../src/close.svg);
+	padding-left: 25px;
+	padding-right: 25px;
+	background-repeat: no-repeat;
+    color:#dd2e44;
+    font-weight:bold;
+}
+
+html[data-intro="hide"] div.toggle_alert a { 
+	background-image:none!important;
+	color:var(--link-color)!important;
+	font-weight:normal!important;
+}
+
+blockquote {background:orange;}
+
+.banner-first {background:black; height:40px;}
+.banner-secondary {background:#111; padding-top:5px; padding-bottom:6px;}
+.optn {
+    background: #4e4e4e;
+    padding: 7px;
+    padding-top:5px;
+    margin-bottom:20px;
+    font-size:13px;
+    border-radius: 0 0 7px 7px;
+    
+}
