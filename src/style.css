@@ -132,7 +132,7 @@ div.box h1 a.toc-anchor { display:none;}
 	width: 120px;
 	float: left;
 	margin-left: -140px;
-	margin-top:20px;
+	margin-top:-3px;
 }
 
 .sidebar img {
